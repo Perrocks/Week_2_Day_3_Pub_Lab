@@ -20,3 +20,8 @@ class TestPub(unittest.TestCase):
     def test_can_add_drink_to_drinks_list(self):
         self.instance_of_Pub.add_to_drinks_list(self.instance_of_Drink)
         self.assertEqual(1, self.instance_of_Pub.drinks_list_length())
+
+    def test_pub_sells_item_to_customer(self):
+        self.instance_of_Pub.add_to_till(self.instance_of_Drink.price)
+        self.assertEqual(505.00, self.instance_of_Pub.till)
+

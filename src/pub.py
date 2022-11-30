@@ -9,3 +9,6 @@ class Pub:
 
     def add_to_drinks_list(self, drink_to_add):
         self.drinks_list.append(drink_to_add)
+
+    def add_to_till(self, amount):
+        self.till += amount
