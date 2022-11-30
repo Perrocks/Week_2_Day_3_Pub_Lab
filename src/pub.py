@@ -10,5 +10,14 @@ class Pub:
     def add_to_drinks_list(self, drink_to_add):
         self.drinks_list.append(drink_to_add)
 
-    def add_to_till(self, amount):
+    def sell_to_customer(self, amount):
         self.till += amount
+
+    def pub_checks_age(self, customer):
+            if customer.age >= 18:
+                return True
+            else:
+                return False
+            
+        
+
